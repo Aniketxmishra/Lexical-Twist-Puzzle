@@ -18,8 +18,12 @@ public class LexicalTwistPuzzle {
             return;
         }
 
-        System.out.println("Word 1: " + word1);
-        System.out.println("Word 2: " + word2);
+        String reversed = new StringBuilder(word1).reverse().toString();
+        if (reversed.equalsIgnoreCase(word2)) {
+            System.out.println("Second word is the reverse of the first word");
+        } else {
+            System.out.println("Second word is NOT the reverse of the first word");
+        }
         scanner.close();
     }
 }

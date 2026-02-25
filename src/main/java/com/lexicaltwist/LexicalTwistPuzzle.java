@@ -1,6 +1,8 @@
 package com.lexicaltwist;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 public class LexicalTwistPuzzle {
     public static void main(String[] args) {
@@ -43,6 +45,10 @@ public class LexicalTwistPuzzle {
             } else {
                 System.out.println("The words are NOT anagrams of each other");
             }
+
+            Set<Character> uniqueChars = new HashSet<>();
+            for (char c : combined.toCharArray()) uniqueChars.add(c);
+            System.out.println("Unique characters in combined word: " + uniqueChars.size());
         }
         scanner.close();
     }

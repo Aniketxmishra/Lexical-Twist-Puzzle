@@ -1,4 +1,5 @@
 package com.lexicaltwist;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class LexicalTwistPuzzle {
@@ -32,6 +33,16 @@ public class LexicalTwistPuzzle {
             System.out.println("Combined: " + combined);
             System.out.println("Vowels: " + vowels);
             System.out.println("Consonants: " + consonants);
+
+            char[] w1 = word1.toLowerCase().toCharArray();
+            char[] w2 = word2.toLowerCase().toCharArray();
+            Arrays.sort(w1);
+            Arrays.sort(w2);
+            if (Arrays.equals(w1, w2)) {
+                System.out.println("The words are anagrams of each other");
+            } else {
+                System.out.println("The words are NOT anagrams of each other");
+            }
         }
         scanner.close();
     }

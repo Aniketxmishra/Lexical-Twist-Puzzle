@@ -1,4 +1,4 @@
-\# Lexical Twist Puzzle
+# Lexical Twist Puzzle
 
 
 
@@ -6,33 +6,33 @@ A console-based Java application built for Capgemini.
 
 
 
-\## Features
+## Features
 
-\- UC1 : Display welcome message
+- UC1 : Display welcome message
 
-\- UC2 : Accept word inputs
+- UC2 : Accept word inputs
 
-\- UC3 : Validate single word constraint
+- UC3 : Validate single word constraint
 
-\- UC4 : Check reverse relationship
+- UC4 : Check reverse relationship
 
-\- UC5 : Transform word if reverse match
+- UC5 : Transform word if reverse match
 
-\- UC6 : Combine words if not reverse
+- UC6 : Combine words if not reverse
 
-\- UC7 : Check anagram relationship
+- UC7 : Check anagram relationship
 
-\- UC8 : Count unique characters in combined word
+- UC8 : Count unique characters in combined word
 
 
 
-\## Tech Stack
+## Tech Stack
 
-\- Java
+- Java
 
-\- Maven
+- Maven
 
-\- Git Flow
+- Git Flow
 
 
 

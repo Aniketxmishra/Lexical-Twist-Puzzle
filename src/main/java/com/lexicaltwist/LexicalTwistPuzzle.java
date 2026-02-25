@@ -20,7 +20,8 @@ public class LexicalTwistPuzzle {
 
         String reversed = new StringBuilder(word1).reverse().toString();
         if (reversed.equalsIgnoreCase(word2)) {
-            System.out.println("Second word is the reverse of the first word");
+            String transformed = reversed.toLowerCase().replaceAll("[aeiou]", "@");
+            System.out.println(transformed);
         } else {
             System.out.println("Second word is NOT the reverse of the first word");
         }
